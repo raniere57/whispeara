@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Go to official page
     goOfficialBtn.addEventListener('click', function() {
-        // Replace with your actual affiliate link
-        window.open('https://getwhispeara.com', '_blank');
+        // Affiliate link
+        window.open('https://hop.clickbank.net/?affiliate=raniere57&vendor=whispeara&pid=pre1&tid=17539368572', '_blank');
         closeModal();
     });
     
@@ -88,12 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Exemplo: gtag('event', 'click', { 'event_category': 'CTA', 'event_label': 'Buy Button' });
             
             console.log('CTA clicked:', this.textContent);
-            
-            // Se não há link definido, prevenir ação padrão
-            if (this.getAttribute('href') === '#') {
-                e.preventDefault();
-                alert('Purchase link will be provided by affiliate');
-            }
         });
     });
 
@@ -206,14 +200,4 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Ready for affiliate link integration');
 });
 
-// Utility function to add affiliate links
-function setAffiliateLinks(affiliateUrl) {
-    const ctaButtons = document.querySelectorAll('.cta-button');
-    ctaButtons.forEach(button => {
-        button.href = affiliateUrl;
-        button.removeAttribute('onclick');
-    });
-}
-
-// Example usage:
-// setAffiliateLinks('https://getwhispeara.com/affiliate-link');
+// All affiliate links are now directly embedded in the HTML
