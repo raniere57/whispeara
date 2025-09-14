@@ -45,7 +45,12 @@
     }
     </script>
     
-    <link rel="stylesheet" href="styles.min.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles-optimized.min.css" as="style">
+    <link rel="preload" href="images/Whispeara2.webp" as="image">
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=AW-17539368572" as="script">
+    
+    <link rel="stylesheet" href="styles-optimized.min.css">
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -114,13 +119,14 @@
                     </div>
                     <div class="video-section">
                         <div class="video-container">
-                            <iframe 
-                                src="https://www.youtube.com/embed/VWDjrGpK2CU" 
-                                title="Whispeara Review Video"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                        <iframe 
+                            src="https://www.youtube.com/embed/VWDjrGpK2CU" 
+                            title="Whispeara Review Video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
                         </div>
                     </div>
                 </div>
@@ -199,32 +205,32 @@
 
                 <div class="ingredients-grid">
                     <div class="ingredient">
-                        <img src="images/i-alpha-gpc.jpg" alt="Alpha-GPC Ingredient in Whispeara Formula for Brain Health" width="80" height="80">
+                        <img src="images/i-alpha-gpc.jpg" alt="Alpha-GPC Ingredient in Whispeara Formula for Brain Health" width="80" height="80" loading="lazy">
                         <h3>Alpha-GPC</h3>
                         <p>Boosts cognitive function and brain health, essential for auditory processing in Whispeara drops.</p>
                     </div>
                     <div class="ingredient">
-                        <img src="images/i-gaba.jpg" alt="GABA Ingredient in Whispeara for Stress Relief" width="80" height="80">
+                        <img src="images/i-gaba.jpg" alt="GABA Ingredient in Whispeara for Stress Relief" width="80" height="80" loading="lazy">
                         <h3>GABA</h3>
                         <p>Promotes relaxation and reduces stress, factors that can affect hearing health.</p>
                     </div>
                     <div class="ingredient">
-                        <img src="images/i-l-dopa.jpg" alt="L-Dopa Bean Ingredient in Whispeara Formula" width="80" height="80">
+                        <img src="images/i-l-dopa.jpg" alt="L-Dopa Bean Ingredient in Whispeara Formula" width="80" height="80" loading="lazy">
                         <h3>L-Dopa Bean</h3>
                         <p>Supports healthy dopamine levels, for mental clarity and peace in Whispeara working formula.</p>
                     </div>
                     <div class="ingredient">
-                        <img src="images/i-moomiyo.jpg" alt="Moomiyo Natural Ingredient in Whispeara" width="80" height="80">
+                        <img src="images/i-moomiyo.jpg" alt="Moomiyo Natural Ingredient in Whispeara" width="80" height="80" loading="lazy">
                         <h3>Moomiyo</h3>
                         <p>Enhances overall vitality, contributing to brain and body wellness in Whispeara benefits.</p>
                     </div>
                     <div class="ingredient">
-                        <img src="images/i-l-arginine.jpg" alt="L-Arginine Ingredient in Whispeara for Blood Circulation" width="80" height="80">
+                        <img src="images/i-l-arginine.jpg" alt="L-Arginine Ingredient in Whispeara for Blood Circulation" width="80" height="80" loading="lazy">
                         <h3>L-Arginina</h3>
                         <p>Supports healthy blood circulation for better ear health with Whispeara.</p>
                     </div>
                     <div class="ingredient">
-                        <img src="images/i-l-tyrosine.jpg" alt="L-Tyrosine Ingredient in Whispeara Formula" width="80" height="80">
+                        <img src="images/i-l-tyrosine.jpg" alt="L-Tyrosine Ingredient in Whispeara Formula" width="80" height="80" loading="lazy">
                         <h3>L-Tirosina</h3>
                         <p>Supports stress resilience and neurotransmitter balance in Whispeara results.</p>
                     </div>
@@ -448,6 +454,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.min.js"></script>
 </body>
 </html>
