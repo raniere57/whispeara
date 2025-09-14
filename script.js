@@ -38,8 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Go to official page
     goOfficialBtn.addEventListener('click', function() {
-        // Affiliate link
-        window.open('https://hop.clickbank.net/?affiliate=raniere57&vendor=whispeara&pid=pre1&tid=17539368572', '_blank');
+        // Close modal when clicking the official page link
         closeModal();
     });
     
